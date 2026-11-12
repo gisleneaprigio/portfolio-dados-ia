@@ -1,6 +1,6 @@
 # 02 · Agente de Contratos
 
-> Agente de IA criado no **Microsoft Copilot Studio** que consulta a base de contratos e responde em linguagem natural sobre prazos, valores, reajustes e cláusulas, sempre citando a fonte.
+> Agente de IA criado no **Microsoft Copilot Studio** que consulta a base de contratos e responde em linguagem natural sobre busca por contratos, valores, sempre citando a fonte.
 > *A demonstração usa contratos, fornecedores e valores fictícios.*
 
 ## Resultado
@@ -11,13 +11,13 @@
 
 ## O problema
 
-A gestão de contratos envolvia centenas de documentos em PDF. Perguntas simples exigiam abrir arquivo por arquivo, por exemplo:
+A gestão de contratos envolvia diversas fontes. Perguntas simples exigiam consultas a diversos sistemas, por exemplo:
 
-- *"O que vence no próximo trimestre?"*
-- *"Quais contratos têm renovação automática?"*
-- *"Qual índice de reajuste se aplica?"*
+- *"Quantos contratos temos com a empresa X?"*
+- *"Qual valores de pagamentos fizemos a empresa Y?"*
+- *"Poderia fazer um relatório com as informações de contrato da empresa W?"*
 
-Cada análise levava cerca de dois dias de trabalho. O risco mais caro era **perder o prazo de aviso de não renovação**.
+Cada análise levava cerca de dois dias de trabalho. O risco mais caro era **demorar para ter a informação para a tomada de decisão**.
 
 ## A solução
 
@@ -25,11 +25,10 @@ Cada análise levava cerca de dois dias de trabalho. O risco mais caro era **per
 
 | Componente (Copilot Studio) | Função |
 |---|---|
-| **Fontes de conhecimento** | Contratos em PDF numa biblioteca do SharePoint, mais a base de contratos (lista ou planilha) |
+| **Fontes de conhecimento** | Base de contratos, pagamentos em uma planilha vinculada a um fluxo de dados |
 | **Instruções** | Definem o papel do agente, o tom e os limites. Ele não inventa informações e sempre cita a cláusula de origem |
 | **Tópicos** | Fluxos guiados para as perguntas mais comuns: vencimentos, reajustes e cláusulas específicas |
 | **Respostas generativas** | Atendem perguntas livres sobre o conteúdo dos contratos |
-| **Ações (Power Automate)** | Enviam alertas de vencimento e exportam uma tabela consolidada para o painel de contratos no Power BI |
 
 ![Contratos por faixa de vencimento](imagens/faixas-vencimento.png)
 
