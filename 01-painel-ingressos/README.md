@@ -7,11 +7,12 @@
 
 ## O problema
 
-A equipe de programação precisava responder com rapidez a perguntas como:
+A gerencia responsável precisava responder com rapidez a perguntas como:
 
 - Quais linguagens artísticas estão abaixo da meta de ocupação?
-- Qual canal de venda está crescendo e qual está perdendo espaço?
-- Estamos cumprindo a meta de gratuidades?
+- Quantidade de eventos em unidades especificas?
+- Receitas de unidades e eventos?
+- Quantidade de cortesias estão abaixo ou acima da média?
 
 Antes, essas respostas dependiam de planilhas exportadas manualmente do sistema de bilheteria e consolidadas a cada mês.
 
