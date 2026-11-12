@@ -12,19 +12,19 @@ Em uma instituição grande, as comunicações internas e externas seguem um pad
 - cada pessoa redigia de um jeito, e os documentos voltavam para correção;
 - consultar o manual de redação a cada documento tomava tempo;
 - erros simples, como campo obrigatório vazio ou tratamento inadequado, passavam despercebidos.
+- saber quantos documentos estão em sua fila para aprovação ou revisão.
 
 ## A solução
 
 ![Arquitetura](imagens/arquitetura.png)
 
-O agente usa como **fontes de conhecimento** o manual de redação, os modelos aprovados e um glossário de siglas e pronomes de tratamento. Ele funciona em dois modos:
+O agente usa como **fontes de conhecimento** correção ortográfica e sugestões usando um modelo de IA, os modelos aprovados e um glossário de siglas e pronomes de tratamento. Ele funciona em dois modos:
 
 | Modo | O que faz |
 |------|-----------|
 | **Redigir** | A pessoa descreve o que precisa em linguagem natural e recebe uma minuta pronta no modelo certo |
 | **Revisar** | A pessoa cola um texto e recebe os desvios das normas apontados, com sugestão de correção |
 
-Ao final, um fluxo do **Power Automate** salva o rascunho em Word para ajustes finais.
 
 ![Checklist de revisão](imagens/checklist-revisao.png)
 
