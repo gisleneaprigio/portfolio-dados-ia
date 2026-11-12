@@ -23,17 +23,10 @@ Sou analista de dados em uma instituição cultural e educacional de grande port
 
 ---
 
-## Como eu trabalho
-
-1. **Começo pela pergunta de negócio**, não pela ferramenta.
-2. **Modelo bem os dados:** esquema estrela, medidas reutilizáveis e regras de acesso (RLS).
-3. **Entrego para quem decide:** cada projeto termina com uma ação possível, e não apenas com um gráfico.
-4. **Automatizo o que se repete:** documentação, conferências e alertas.
-
 ## Contato
 
-- LinkedIn: [seu-perfil](https://www.linkedin.com/in/SEU-PERFIL) ✏️
-- E-mail: ✏️
+- LinkedIn: https://www.linkedin.com/in/gislene-aprigio/ 
+- E-mail: gisleneaprigio@gmail.com
 
 ---
 
